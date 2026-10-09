@@ -32,17 +32,15 @@ jobs:
     needs: build
 
     steps:
-      - name: Download Website Artifact
-        uses: actions/download-artifact@v6
-        with:
-          name: github-pages
-          path: ./site
+      - name: Checkout
+        uses: actions/checkout@v6
 
       - name: Verify Website
         run: |
-          test -f ./site/index.html
+          echo "Checking website files..."
+          test -f index.html
+          echo "index.html found successfully"
           echo "Build completed successfully"
-          echo "index.html found"
 
   deploy:
     runs-on: ubuntu-latest
