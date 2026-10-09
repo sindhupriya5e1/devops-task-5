@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #667eea;
+}
+
+
+/* Sections */
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    text-align: center;
+    color: #667eea;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* About */
+
+#about p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Skills */
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+
+#skills li {
+    background: #f0f2ff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Projects */
+
+article {
+    background: #f8f9ff;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #667eea;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+/* Contact */
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+#contact a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    section {
+        margin: 25px 15px;
+        padding: 30px 20px;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
