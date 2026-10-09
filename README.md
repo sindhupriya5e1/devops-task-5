@@ -234,7 +234,7 @@ I pushed the HTML and CSS files to a public GitHub repository, configured GitHub
 
 ### Q16. What is the live URL of your project?
 
-https://chinnu9729.github.io/devops-task5-github-pages/
+https://sindhupriya5e1.github.io/devops-task-5/
 
 ### Q17. Is an EC2 instance required to host a website on GitHub Pages?
 
